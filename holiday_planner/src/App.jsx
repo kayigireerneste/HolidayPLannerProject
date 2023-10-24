@@ -4,6 +4,7 @@ import Home from "./components/home";
 import NavBar from "./layouts/navBar";
 import Footer from "./layouts/footer";
 import Error from "./components/Error";
+import About from "./components/about";
 
 function App() {
   const Layout = () => {
@@ -18,14 +19,15 @@ function App() {
 
   return (
     <div className="mainApp">
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path='*' element={<Error />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }

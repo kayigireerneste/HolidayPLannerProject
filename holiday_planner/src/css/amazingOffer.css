@@ -1,0 +1,119 @@
+.amazingOffer_content{
+    min-height: 100vh;
+    width: 100%;
+    display: grid; 
+    margin-top: 100px;
+    background-color: #F6F6F6;
+    margin-bottom: 80px;
+}
+
+.headerOffer_title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.header_title{
+    display: grid;
+    margin-left: 65px;
+}
+
+.Offer_title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #C29D59;
+    padding-left: 15px;
+    border-left: 2px solid #C29D59;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.SubOffer_title{
+    font-size: 35px;
+    font-weight: lighter;
+    opacity: 0.9;
+    letter-spacing: 2px;
+}
+
+.next_prev{
+    display: grid;
+    margin-right: 60px;
+    height: 18vh;
+    margin-top: 60px;
+}
+
+.next_prev button{
+    width: 80px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #c29d59;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.Offers_container{
+    min-height: 50%;
+    display: flex;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+
+.Offers{
+    display: grid;
+}
+
+.Offers:nth-child(n+2){
+    margin-left: 60px;
+}
+
+.offer_image{
+    width: 26vw;
+    height: 60vh;
+}
+
+.main_image{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.offerplace{
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 10vh;
+    float: left;
+    margin-left: 50px;
+    margin-top: -30px;
+    border-left: 5px solid #C29D59;
+    box-shadow: 0 3px 8px #00000033;
+}
+
+.OfferAmount{
+    width: 20%;
+    height: 100%;
+    border: none;
+    background-color: #C29D59;
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: all ease 1s;
+}
+
+.OfferAmount:hover{
+    background-color: #000000;
+}
+
+.places{
+    font-size: 16px;
+    margin-left: 10px;
+    color: #000000;
+    opacity: 0.9;
+}
