@@ -229,6 +229,7 @@
     height: 0;
   }
 
+  /**css for navBar modal**/
   .navBarModel{
     display: flex;
     justify-content: space-between;
@@ -245,6 +246,7 @@
   .backbuton{
     height: 100%;
     width: 19%;
+    position: relative;
   }
 
   .close_icon{
@@ -254,3 +256,87 @@
     border-radius: 50%;
     border: 3px solid #FFFFFF;
   }
+  
+  .modal_icons{
+    display: grid;
+    margin-bottom: 70px;
+  }
+
+  .backbuton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  ._icons{
+    color: #C29D59;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    font-size: 30px;
+    padding: 8px;
+    margin-bottom: 20px;
+    transition: all ease 1s;
+  }
+
+  ._icons:hover{
+    color: #FFFFFF;
+    background-color: #C29D59;
+  }
+
+/** css for main content of navbar **/
+.model_content{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modalLogo{
+    width: 350px;
+    height: 80px;
+    position: relative;
+    top: 100px;
+    left: 80px;
+}
+
+.main_NavBar{
+    width: 80%;
+    height: 60%;
+    position: relative;
+    left: 90px;
+    top: 60px;
+    
+}
+
+.main_NavBar ul{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #393939;
+    padding-left: 30px;
+    list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.links{
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all ease 0.5s;
+}
+
+.links:hover{
+    color: #C29D59;
+    text-decoration: line-through;
+}
+
+.active-link{
+    text-decoration: line-through;
+    color: #C29D59;
+    font-weight: bold;
+}

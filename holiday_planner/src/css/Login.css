@@ -1,0 +1,254 @@
+.container_of_all{
+    display: grid;
+}
+
+.login_contents{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.loginForm_Container{
+    width: 38%;
+    height: 100vh;
+}
+
+.LoginForm{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 10px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 5px 12px #0000004b;
+}
+
+.loginTitle{
+    display: grid;
+}
+
+.loginTitle h1{
+    font-size: 30px;
+    font-weight: bold;
+    height: 6vh;
+    font-style: bold;
+    color: #000000;
+}
+
+.loginTitle p{
+    font-size: 14px;
+    color: #0000008c;
+}
+
+.linkToSignUp{
+    font-size: 14px;
+    color: #6818C5;
+    font-weight: bold;
+}
+
+.LoginEmail{
+    display: grid;
+    margin-top: 40px;
+}
+
+.LoginEmail label{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#emailAddress{
+    height: 8vh;
+    width: 84%;
+    outline: none;
+    padding: 20px;
+    font-size: 13px;
+    border-radius: 5PX;
+    border: 2px solid #00000062;
+}
+
+.LoginPassword{
+    display: grid;
+    margin-top: 40px;
+}
+
+.LoginPassword div{
+    display: flex;
+    justify-content: space-between;
+    width: 84%;
+}
+
+.LoginPassword div label{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.LoginPassword div a{
+    font-size: 15px;
+    color: #6818C5;
+    font-weight: bold;
+}
+
+#LoginPassword{
+    height: 8vh;
+    width: 84%;
+    outline: none;
+    padding: 20px;
+    font-size: 13px;
+    border-radius: 5PX;
+    border: 2px solid #00000062;
+}
+
+.remember_me{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    height: 3vh;
+}
+
+#rememberMe{
+    height: 3vh;
+    width: 3vw;
+}
+
+.remember_me label{
+    font-size: 13px;
+    font-weight: bold;
+    color: #00000073;
+}
+
+
+.LoginBtn{
+    width: 84%;
+    padding: 1em 1.5em;
+    color: #FFFFFF;
+    font-size: 15px;
+    background-color: #C29D59;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 0;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden; 
+}
+
+.LoginBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000000;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .LoginBtn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C29D59;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .LoginBtn:hover::before {
+    height: 100%;
+  }
+
+  .LoginBtn:hover::after {
+    height: 0;
+  }
+
+  .AnotherOption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 84%;
+    margin-top: 20px;
+  }
+
+  .AnotherOption h4{
+    color: #00000065;
+    font-size: 15px;
+  }
+
+  .googleAndFb{
+    display: flex;
+    width: 84%;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  .google{
+    width: 45%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    outline: none;
+    border: 2px solid #0000002f;
+    border-radius: 5px;
+  }
+
+  .Fb{
+    width: 45%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    outline: none;
+    border: 2px solid #0000002f;
+    border-radius: 5px;
+  }
+
+  .google h4{
+    padding-left: 10px;
+    font-size: 16px;
+    color: #ff0000a2;
+  }
+
+  .Fb h4{
+    padding-left: 10px;
+    color: #0000ff9a;
+    font-size: 16px;
+  }
+
+  .googleIcon{
+    font-size: 30px;
+  }
+
+  .facebookicon{
+    font-size: 30px;
+    color: #0000ff9d;
+  }
+
+.loginImage_Container{
+    width: 44.5%;
+    height: 100vh;
+}
+
+.LoginImage{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    margin-left: 30px;
+}
+
+.bottombackground{
+    height: 35vh;
+    width: 100%;
+}

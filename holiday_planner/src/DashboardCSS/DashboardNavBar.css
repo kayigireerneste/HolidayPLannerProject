@@ -1,0 +1,111 @@
+.Nav_Container{
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 5px 0 5px -2px #00000059;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header_container{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.DashNavLogo{
+    width: 100%;
+    position: relative;
+    top: 40px;
+}
+
+.DashNavLogo img{
+    height: 6vh;
+    width: 12vw;
+    position: relative;
+    left: 30px;
+}
+
+.header_container h1{
+    font-size: 13px;
+    color: #00000060;
+    margin-left: 40px;
+    position: relative;
+    top: 30px;
+}
+
+.dashNav{
+    height: 60%;
+    width: 100%;
+}
+
+.dashNav ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.dashNav ul li{
+    width: 76%;
+    position: relative;
+    left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashLink:hover{
+    color: #C29D59;
+}
+
+.dashNav ul li span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashLink{
+    text-decoration: none;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+    transition: all ease 1s;
+}
+
+.dashLink.active {
+    color: #C29D59;
+  }
+
+.dashNavIcon{
+    font-size: 18px;
+    color: #C29D59;
+}
+
+.profileIMages{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.profileIMages input{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+    border: 2px solid #00000059;
+}
+

@@ -1,0 +1,233 @@
+.amezingTours_container{
+    display: grid;
+    margin-bottom: 80px;
+}
+
+.amezingTour_content{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: grid; 
+}
+
+.amazingTour_title{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.amazingTourMain_title{
+    display: grid;
+    margin-left: 65px;
+}
+
+.amaziTour_title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #C29D59;
+    padding-left: 15px;
+    border-left: 2px solid #C29D59;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.SubAmaziTour_title{
+    font-size: 35px;
+    font-weight: lighter;
+    opacity: 0.9;
+    letter-spacing: 2px;
+}
+
+.next_prev_buttons{
+    display: grid;
+    margin-right: 60px;
+    height: 18vh;
+    margin-top: 60px;
+}
+
+.next_prev_buttons button{
+    width: 80px;
+    height: 40px;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #c29d59;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.AmazingTourContainer{
+    width: 93%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 45px;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.Amazing_Tour{
+    margin-bottom: -200px;
+}
+
+.AmazingTourImages{
+    width: 100%;
+    height: 35%;
+}
+
+.AmazingTourImages .BookingImage_one{
+    width: 90%;
+    height: 100%;
+}
+
+.AmazingTourLocation{
+    border-left: 3px solid #C29D59;
+    box-shadow: 0 2px 8px #00000033;
+    width: 90%;
+}
+
+.countryName{
+    background-color: #C29D59;
+    width: max-content;
+    min-width: 10vw;
+    height: 7vh;
+    position: relative;
+    top: -25px;
+    left: 25px;
+    
+}
+
+.countryName h1{
+    font-size: 20px;
+    position: relative;
+    font-weight: bold;
+    left: 18px;
+    top: 6px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.tourCOntent{
+    margin-left: 25px;
+}
+
+.tourCOntent h4{
+    width: 95%;
+    letter-spacing: 1px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.tourCOntent p{
+    width: 100%;
+    line-height: 25px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.durationsAndGrpSize{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin-left: 25px;
+    border-top: 1px solid #00000052;
+    border-bottom: 1px solid #00000052;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.durations{
+    display: flex;
+    width: 50%;
+}
+
+.GrpSize{
+    display: flex;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.tourIcon1{
+    font-size: 25px;
+    color: #C29D59;
+}
+
+.days{
+    margin-left: 10px;
+    display: grid;
+}
+
+.days h3{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.days p{
+    font-size: 12px;
+    font-size: 100;
+}
+
+.TotaleAmount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-left: 25px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.TotaleAmount h2{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.bookingBtn{
+    padding: 1em 1.5em;
+    color: #FFFFFF;
+    font-size: 14px;
+    background-color: #C29D59;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 0;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden; 
+}
+
+.bookingBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:#292929;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .bookingBtn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C29D59;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .bookingBtn:hover::before {
+    height: 100%;
+  }
+
+  .bookingBtn:hover::after {
+    height: 0;
+  }

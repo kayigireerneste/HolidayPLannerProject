@@ -21,6 +21,7 @@ const AmazingOffer = () => {
             <div className="Offers_container">
                 <div className="Offers">
                     <div className="offer_image">
+                        <div className="OfferDegre">32% off</div>
                         <img className="main_image" src={OfferImage1} alt="offers image" />
                     </div>
                     <div className="offerplace">
@@ -30,6 +31,7 @@ const AmazingOffer = () => {
                 </div>
                 <div className="Offers">
                     <div className="offer_image">
+                        <div className="OfferDegre">39% off</div>
                         <img className="main_image" src={OfferImage2} alt="offers image" />
                     </div>
                     <div className="offerplace">
@@ -39,6 +41,7 @@ const AmazingOffer = () => {
                 </div>
                 <div className="Offers">
                     <div className="offer_image">
+                        <div className="OfferDegre">12% off</div>
                         <img className="main_image" src={OfferImage3} alt="offers image" />
                     </div>
                     <div className="offerplace">

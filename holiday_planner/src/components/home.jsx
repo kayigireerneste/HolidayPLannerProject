@@ -3,9 +3,10 @@ import { useState } from "react";
 import image1 from "../images/image1.jpg";
 import image2 from "../images/image2.jpg";
 import image3 from "../images/image3.jpg";
-import About from "./about";
 import ToFind from "./toFind";
 import AmazingOffer from "./amazingOffer";
+import About1 from "./about1";
+import AmezingTours from "./amezingTours";
 
 const Home = () => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -72,10 +73,13 @@ const Home = () => {
         <ToFind />
       </div>
       <div className="about">
-        <About />
+        <About1 />
       </div>
       <div className="amazingOffer">
         <AmazingOffer />
+      </div>
+      <div className="amezingTours">
+        <AmezingTours/>
       </div>
     </div>
   );

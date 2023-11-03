@@ -1,0 +1,340 @@
+.contactUs_content{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+}
+
+.contactUs_background{
+    width: 100%;
+    height: 150vh;
+}
+
+.contactUs_image_{
+    width: 100%;
+    height: 120vh;
+}
+
+.contactUsImage{
+    width: 100%;
+    height: 100%;
+}
+
+
+.ContactUs_word{
+    width: 30%;
+    font-size: 60px;
+    color: #FFFFFF;
+    font-weight: bold; 
+    position: relative; 
+    left: 38%;
+    top: -55%;
+    letter-spacing: 3px;
+}
+
+/* main contents in the contact us*/
+.mainContactUs{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    margin-top: -177px;
+    background-color: #FFFFFF;
+}
+.cotactUs_form{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.sideform{
+    width: 60%;
+    min-height: 100vh;
+    display: grid;
+}
+
+.OriginalForm{
+    position: relative;
+    top: 60px;
+    left: 50px;
+    width: 90%;
+    height: 80%;
+    display: grid;
+    box-shadow: 0 2px 8px #00000033;
+}
+
+.fullNameAndEmail{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 40px;
+}
+
+.PhoneAndServises{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+    justify-content: space-between;
+}
+
+#input{
+    width: 22vw;
+    height: 8vh;
+    padding: 20px;
+    outline: none;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #00000081;
+}
+
+#input:nth-child(2){
+    margin-right: 30px;
+}
+
+#input:nth-child(1){
+    margin-left: 30px;
+}
+
+#messages{
+    width: 91%;
+    height: 20vh;
+    position: relative;
+    outline: none;
+    left: 30px;
+    padding: 20px;
+    padding-bottom: 80px;
+    background-color: #FFFFFF;
+    border: 1px solid #00000081;
+    color: #000000;
+}
+
+
+.submitMessage{
+    width: 15vw;
+    height: 8vh;
+    color: #FFFFFF;
+    font-size: 14px;
+    background-color: #C29D59;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 0;
+    font-weight: bold;
+    position: relative;
+    left: 30px;
+    overflow: hidden; 
+}
+
+.submitMessage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:#292929;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .submitMessage::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C29D59;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .submitMessage:hover::before {
+    height: 100%;
+  }
+
+  .submitMessage:hover::after {
+    height: 0;
+  }
+
+
+.whybookingTourAndQuestions{
+    width: 40%;
+    height: 100%;
+    display: grid;
+    background-color: #FFFFFF;
+}
+
+.contactusWhyBooking{
+    background-color: #F6F6F6;
+    height: 100%;
+    width: 70%;
+    box-shadow: 0 2px 8px #00000033;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    position: relative;
+    top: -50px;
+    left: 30px;
+}
+
+.contactusWhyTitle{
+    font-size: 19px;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+    border-left: 3px solid #C29D59;
+    margin-bottom: 30px;
+}
+
+.contactusWhyBooking ul{
+    display: grid;
+    list-style-type: none;
+}
+
+.contactusWhyBooking ul li{
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.ContactUsquestios{
+    background-color: #B69457;
+    height: 100%;
+    width: 70%;
+    box-shadow: 0 2px 8px #00000033;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    color: #FFFFFF;
+    position: relative;
+    left: 30px;
+}
+
+.ContactUsQstTitle{
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+    border-left: 3px solid #000000;
+    margin-bottom: 30px;
+}
+
+.ContactUsquestios p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.ContactUsquestios h5{
+    margin-bottom: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    opacity: 0.8;
+}
+
+.OfficesAndMap{
+    background-color: #F6F6F6;
+    width: 100%;
+    min-height: 130vh;
+    display: flex;
+    margin-top: 40px;
+}
+
+
+.OfficesAndAddresses{
+    width: 40%;
+    height: 100%;
+    display: grid;
+    position: relative;
+    left: 86px;
+    top: 40px;
+    bottom: 50px; 
+}
+
+.indiaOffice{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    margin-top: 40px;
+}
+
+.addresses_container{
+    height: 100%;
+    margin-top: -60px;
+}
+
+.child{
+    height: 100%;
+}
+
+.child:nth-child(2){
+    position: relative;
+    bottom: 50px;
+}
+
+.child:nth-child(3){
+    position: relative;
+    bottom: 80px;
+}
+
+.indiaAddress{
+    display: flex;
+    height: 5vh;
+    margin-top: 15px;
+}
+
+.sendAddress{
+    width: 3vw;
+    height: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px #00000033;
+    outline: none;
+    border: none;
+    transition: all ease 0.8s;
+}
+
+.sendAddress:hover{
+    background-color: #B69457;
+}
+
+.IndiaTitle{
+    font-size: 16px;
+    height: 4vh;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+    border-left: 2px solid #C29D59;
+}
+
+.indiaAddress h5{
+    padding-left: 20px;
+    font-size: 15px;
+    padding-top: 5px;
+    color: #000000a6;
+}
+
+.contactIcon{
+    font-size: 20px;
+    color: #C29D59;
+}
+
+.contactIcon:hover{
+    color: #FFFFFF;
+}
+
+.Map{
+    width: 60%;
+    min-height: 100%;
+}
+
+.ContactUsMap{
+    width: 100%;
+    height: 100%;
+}

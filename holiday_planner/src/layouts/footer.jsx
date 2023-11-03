@@ -32,22 +32,22 @@ const Footer = () => {
           <nav className="footer_navBar">
             <ul className="nav_list">
               <li>
-                <Link className="link">Home</Link>
+                <Link to="/" className="link">Home</Link>
               </li>
               <li>
-                <Link className="link">About</Link>
+                <Link to="/about" className="link">About</Link>
               </li>
               <li>
-                <Link className="link">Destination</Link>
+                <Link to="/login" className="link">Destination</Link>
               </li>
               <li>
-                <Link className="link">Tour</Link>
+                <Link to="/tours" className="link">Tour</Link>
               </li>
               <li>
-                <Link className="link">Blog</Link>
+                <Link to="signUp" className="link">Blog</Link>
               </li>
               <li>
-                <Link className="link">Contact us</Link>
+                <Link to="/contact" className="link">Contact us</Link>
               </li>
             </ul>
           </nav>

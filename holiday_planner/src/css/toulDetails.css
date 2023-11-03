@@ -1,0 +1,611 @@
+.toulDetails_content{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+}
+
+.tourDetail_background{
+    width: 100%;
+    height: 100vh;
+}
+
+.tourDetail_image_{
+    width: 100%;
+    height: 100vh;
+}
+
+.tourDetail_image{
+    width: 100%;
+    height: 100%;
+}
+
+
+.tourDetail_word{
+    width: 25%;
+    font-size: 60px;
+    color: #FFFFFF;
+    font-weight: bold; 
+    position: relative; 
+    left: 45%;
+    top: -50%;
+}
+
+/* main content of tour list*/
+
+.ToulDetailMain_content{
+    width: 100%;
+    min-height: 400vh;
+    display: flex;
+}
+
+.toulDetails_inDetail{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.tourDetailsNavBar{
+    height: 8vh;
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.linkdetail_container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #00000070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkdetail_container:nth-child(1){
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #B69457;
+    border: none;
+}
+
+.linkdetail_container:nth-child(5){
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.linktoDetail{
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+    margin-left: 5px;
+}
+
+.linktoDetail_1{
+    color: #FFFFFF;
+}
+
+.icons_{
+    font-size: 18px;
+    color: #B69457;
+}
+
+.icons_1{
+    color: #000000;
+}
+
+.informations_container{
+    height: 90%;
+    width: 87%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    box-shadow: 0 2px 8px #00000033;
+}
+
+.offerDegre_container{
+    height: 8vh;
+    width: 100%;
+}
+.offerDegre{
+    background-color: #000000;
+    position: relative;
+    height: 100%;
+    width: 5vw;
+    position: relative;
+    left: 92%;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 50%;
+    opacity: 0.8;
+
+}
+
+.offerDegre h5{
+    font-size: 13px;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.headerTitle{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerTitle h1{
+    width: 100%;
+    height: 100%;
+    line-height: 7vh;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+}
+
+.detailsOfDetail{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.amountcontainer{
+    height: 90px;
+    width: 100px;
+    background-color: #C29D59;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+    color: #FFFFFF;
+    font-weight: bold;
+    position: relative;
+    right: 20px;
+    top: -30px;
+}
+
+.div1{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
+.div2{
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #FFFFFF;
+    font-size: 10px;
+    padding-top: 5px;
+}
+
+.tourInformations{
+    height: 20vh;
+    width: 100%;
+    background-color: #C29D59;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.Infos{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Infos h3{
+    font-size: 13px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.InfoIcons{
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.wordAndVideoContent{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.paragraph1,
+.paragraph2{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.paragraph1 p,
+.paragraph2 p{
+    font-size: 15.8px;
+    color: #000000;
+    font-weight: 450;
+}
+
+.video{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.videoOG{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.table{
+    width: 100%;
+    min-height: 30%;
+    margin-top: 30px;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.table table th, .table table td {
+    border: 1px solid #000000a9;
+    padding: 22px;
+    align-items: flex-start;
+}
+
+
+.tablelist{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.iconn{
+    font-size: 20px;
+    color: #C29D59;
+    margin-right: 5px;
+}
+
+.iconns{
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    margin-right: 8px;
+}
+
+.trandingImg{
+    height: 10%;
+    width: 100%;
+}
+
+.IMG_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.IMG{
+    height: 100%;
+    width: 34%;
+}
+
+.IMG img{
+    height: 100%;
+    width: 100%;
+}
+
+.slider-btn{
+    padding: 1em 1.5em;
+    color: #FFFFFF;
+    font-size: 12px;
+    background-color: #C29D59;
+    border: none;
+    cursor: pointer;
+    z-index: 0;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden; 
+    top: 60%;
+    transform: rotate(-90deg);
+}
+
+.slider-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:#292929;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .slider-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C29D59;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .slider-btn:hover::before {
+    height: 100%;
+  }
+
+  .slider-btn:hover::after {
+    height: 0;
+  }
+
+
+  .slider-btn1{
+    padding: 1em 2.4em;
+    color: #FFFFFF;
+    font-size: 12px;
+    background-color: #C29D59;
+    border: none;
+    cursor: pointer;
+    z-index: 0;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden; 
+    left: 85%;
+    bottom: 60%;
+    transform: rotate(90deg);
+}
+
+.slider-btn1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:#292929;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .slider-btn1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C29D59;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .slider-btn1:hover::before {
+    height: 100%;
+  }
+
+  .slider-btn1:hover::after {
+    height: 0;
+  }
+
+.bookThisTour{
+    width: 30%;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookThisTour_container{
+    width: 90%;
+    height: 38%;
+    background-color: #FFFFFF;
+    position: relative;
+    top: -80px;
+    box-shadow: 0 2px 8px #00000033;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    left: -30px;
+}
+
+.bookThisTour_Title{
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 3px solid #C29D59;
+    margin-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.bookThisTourForm{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bookingInput{
+    width: 100%;
+    display: grid;
+}
+
+#FullName{
+    width: 100%;
+    height: 8vh;
+    font-size: 15px;
+    border: 1px solid #000000be;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    outline: none;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #000000;
+}
+
+#message{
+    width: 100%;
+    height: 20vh;
+    font-size: 15px;
+    border: 1px solid #000000be;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    outline: none;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    color: #000000;
+    padding-top: 10px;
+}
+
+#checker{
+    width: 25px;
+    height: 25px;
+    outline: none;
+}
+
+.checkAvailability{
+    display: flex;
+    font-size: 14px;
+}
+
+ .searchTourButton{
+    padding: 1em 1.5em;
+    color: #FFFFFF;
+    font-size: 14px;
+    background-color: #C29D59;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 0;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden; 
+}
+
+.searchTourButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color:#292929;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .searchTourButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #C29D59;
+    transition: all ease 0.8s;
+    z-index: -1;
+  }
+
+  .searchTourButton:hover::before {
+    height: 100%;
+  }
+
+  .searchTourButton:hover::after {
+    height: 0;
+  }
+
+.whyBook{
+    background-color: #F6F6F6;
+    height: 11%;
+    width: 90%;
+    box-shadow: 0 2px 8px #00000033;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-left: -30px;
+}
+
+.whyBookTitle{
+    font-size: 19px;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+    border-left: 3px solid #C29D59;
+    margin-bottom: 30px;
+}
+
+.whyBook ul{
+    display: grid;
+    list-style-type: none;
+}
+
+.whyBook ul li{
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #000000;
+}
+
+.haveQst{
+    margin-top: 80px;
+    background-color: #B69457;
+    height: 12%;
+    width: 90%;
+    box-shadow: 0 2px 8px #00000033;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-left: -30px;
+    color: #FFFFFF;
+}
+
+.QstTitle{
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-left: 10px;
+    border-left: 3px solid #000000;
+    margin-bottom: 30px;
+}
+
+.haveQst p{
+    margin-bottom: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.haveQst h5{
+    margin-bottom: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    opacity: 0.8;
+}

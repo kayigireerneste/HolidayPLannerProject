@@ -3,12 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-.mainApp{
+
+.mainAppjs{
     min-height: 100vh;
     width: 100%;
-    height: fit-content;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+}
+
+.dashboardjs{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sideBarjs{
+    width: 20%;
+    height: 100vh;
+}
+
+.Dashoutlet{
+    width: 80%;
+    min-height: 100vh;
 }
