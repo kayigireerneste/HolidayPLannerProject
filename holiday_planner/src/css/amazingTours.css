@@ -38,6 +38,7 @@
     font-weight: lighter;
     opacity: 0.9;
     letter-spacing: 2px;
+    width: 70%;
 }
 
 .next_prev_buttons{
@@ -231,3 +232,164 @@
   .bookingBtn:hover::after {
     height: 0;
   }
+
+
+  @media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+
+
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+
+    .amezingTours_container{
+        display: grid;
+    }
+
+    .amezingTour_content{
+        min-height: 100vh;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: grid; 
+        margin-bottom: 100px;
+    }
+
+    .amazingTour_title{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .amazingTourMain_title{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .amaziTour_title{
+        margin-top: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #C29D59;
+        padding-left: 15px;
+        border-left: 2px solid #C29D59;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    .SubAmaziTour_title{
+        font-size: 20px;
+        font-weight: lighter;
+        opacity: 0.9;
+        letter-spacing: normal;
+        width: 85%;
+        margin-left: 10px;
+    }
+
+    .next_prev_buttons{
+        display: none;
+    }
+
+    .AmazingTourContainer{
+        width:90%;
+        min-height: 50vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 45px;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    .AmazingTourLocation{
+        border-left: 3px solid #C29D59;
+        box-shadow: 0 2px 8px #00000033;
+        width: 90%;
+    }
+
+    .tourToRemove{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    .amezingTours_container{
+        display: grid;
+    }
+
+    .amezingTour_content{
+        min-height: 100vh;
+        width: 100%;
+        background-color: #FFFFFF;
+        display: grid; 
+        margin-bottom: 100px;
+    }
+
+    .amazingTour_title{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .amazingTourMain_title{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .amaziTour_title{
+        margin-top: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #C29D59;
+        padding-left: 15px;
+        border-left: 2px solid #C29D59;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+    }
+
+    .SubAmaziTour_title{
+        font-size: 20px;
+        font-weight: lighter;
+        opacity: 0.9;
+        letter-spacing: normal;
+        width: 85%;
+        margin-left: 10px;
+    }
+
+    .next_prev_buttons{
+        display: none;
+    }
+
+    .AmazingTourContainer{
+        width:90%;
+        min-height: 50vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 45px;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+
+    .AmazingTourLocation{
+        border-left: 3px solid #C29D59;
+        box-shadow: 0 2px 8px #00000033;
+        width: 90%;
+    }
+
+    .tourToRemove{
+        display: none;
+    }
+
+
+}

@@ -25,7 +25,7 @@ const ToFind = () => {
       </div>
       <button className="submit_location">
             FIND NOW
-        </button>
+      </button>
     </div>
   );
 };

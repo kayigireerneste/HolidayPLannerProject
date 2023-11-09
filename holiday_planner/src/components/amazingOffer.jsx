@@ -11,7 +11,7 @@ const AmazingOffer = () => {
             <div className="headerOffer_title">
                 <div className="header_title">
                     <h1 className="Offer_title">Amazing Offers</h1>
-                    <h3 className="SubOffer_title">Special <strong>Deals</strong> And Last Minute <br /> <strong>Amazing Offers</strong></h3>
+                    <h3 className="SubOffer_title">Special <strong>Deals</strong> And Last Minute <strong>Amazing Offers</strong></h3>
                 </div>
                 <div className="next_prev">
                     <button className="previous">Prev</button>
@@ -19,7 +19,7 @@ const AmazingOffer = () => {
                 </div>
             </div>
             <div className="Offers_container">
-                <div className="Offers">
+                <div className="Offers offer1">
                     <div className="offer_image">
                         <div className="OfferDegre">32% off</div>
                         <img className="main_image" src={OfferImage1} alt="offers image" />
@@ -39,7 +39,7 @@ const AmazingOffer = () => {
                         <button className="OfferAmount">$3300</button>
                     </div>
                 </div>
-                <div className="Offers">
+                <div className="Offers offer1">
                     <div className="offer_image">
                         <div className="OfferDegre">12% off</div>
                         <img className="main_image" src={OfferImage3} alt="offers image" />
@@ -49,7 +49,13 @@ const AmazingOffer = () => {
                         <button className="OfferAmount">$5000</button>
                     </div>
                 </div>
-                
+                <div className="nextAndPreTour">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
      );

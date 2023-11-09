@@ -5,6 +5,8 @@ import { FcGoogle } from "react-icons/fc";
 import { ImFacebook } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -12,9 +14,13 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState();
 
   //login logic function
   const handleLoginSubmit = async (event) => {
+
+    setIsLoading(true);
+    
     event.preventDefault();
     const userData = {
       email,
@@ -32,24 +38,30 @@ const Login = () => {
         }
       );
       if (response.ok) {
-
         //direct to Dashboard
-        alert("login successfully");
+        // alert("login successfully");
         const data = await response.json();
         const { access_token } = data;
         console.log(data);
-         localStorage.setItem("access_token", access_token);
-        if (data.user.role == "admin") {
-          navigate("/Dashboard");
-        } else {
-          navigate("/");
-        }
+        toast.success("loging in...");
+        setIsLoading(false);
+        localStorage.setItem("access_token", access_token);
+        navigate("/Dashboard");
+        // if (data.user.role == "") {
+        //   navigate("/Dashboard")
+        // } else {
+        //   navigate("/");
+        // }
       } else {
-        alert("Invalid Email or Password");
+        // alert("Invalid Email or Password");
+        toast.error('Invalid Email or Password');
+        setIsLoading(false);
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred while logging in.");
+      // alert("An error occurred while logging in.");
+      toast.error('Oops!! error occurred while logging in.');
+      setIsLoading(false);
     }
   };
 
@@ -57,10 +69,11 @@ const Login = () => {
   const handleRememberMeChange = () => {
     setRememberMe(!rememberMe);
   };
-
+  
 
   return (
     <div className="container_of_all">
+      <ToastContainer/>
       <div className="bottombackground"></div>
       <div className="login_contents">
         <div className="loginForm_Container">
@@ -109,7 +122,7 @@ const Login = () => {
               />
               <label htmlFor="rememberMe">Remember Me</label>
             </div>
-            <button type="submit" className="LoginBtn">LOGIN</button>
+            <button type="submit" className="LoginBtn">{isLoading? 'LOGING IN...' : 'LOGIN'}</button>
             <div className="AnotherOption">
               <hr width="35%" size="2" />
               <h4>or login with</h4>

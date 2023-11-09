@@ -13,7 +13,7 @@
 
 .signUpForm_Container{
     width: 38%;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .signUpForm{
@@ -226,4 +226,91 @@
 .bottombackground{
     height: 35vh;
     width: 100%;
+}
+
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+
+
+}
+@media only screen and (max-width: 600px){
+/*Big smartphones [426px -> 600px]*/
+
+.signUp_main_contents{
+  width: 100%;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.signUpForm_Container{
+  width: 100%;
+  height: auto;
+}
+
+.signUpForm{
+  display: grid;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  left: 5%;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 5px 12px #0000004b;
+  bottom: 30px;
+  top: 30px;
+}
+
+.SignUpImage_Container{
+  display: none;
+}
+
+.bottombackground{
+  display: none;
+}
+
+
+  
+}
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+.signUp_main_contents{
+  width: 100%;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.signUpForm_Container{
+  width: 100%;
+  height: auto;
+}
+
+.signUpForm{
+  display: grid;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  left: 5%;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 5px 12px #0000004b;
+  bottom: 30px;
+  top: 30px;
+}
+
+.SignUpImage_Container{
+  display: none;
+}
+
+.bottombackground{
+  display: none;
+}
+
 }

@@ -5,7 +5,9 @@ import { FcGoogle } from "react-icons/fc";
 import { ImFacebook } from "react-icons/im";
 import { useState } from "react";
 import axios from "axios";
-// import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignUp = () => {
 
@@ -14,6 +16,7 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const navigate = useNavigate();
 
 
   // function for sending data to the database
@@ -21,8 +24,12 @@ const SignUp = () => {
     event.preventDefault();
 
     if (password !== confirmPassword) {
-      alert("Passwords Do NOT Match");
+      // alert("Passwords Do NOT Match");
+      toast.error('Passwords Do NOT Match.');
       return;
+    }
+    else{
+      toast.success("user registered successfully!");
     }
 
     try {
@@ -34,10 +41,10 @@ const SignUp = () => {
           password,
         }
       );
-
       // messages for succession registrations
       console.log("User registered successfully", response.data);
-      alert("user registred successfully!");
+      // alert("user registred successfully!");
+      navigate("/login");
       // clear the input for next registration
       setfullNames("");
       setEmail("");
@@ -46,12 +53,14 @@ const SignUp = () => {
     } catch (error) {
       // message for failed registrations
       console.error("Error during registration", error);
-      alert("There was ERRORS while registaring");
+      // alert("There was ERRORS while registaring");
+      toast.error('Oops!! error occurred while registaring.');
     }
   };
 
   return (
     <div className="signUp_Content">
+      <ToastContainer/>
       <div className="bottombackground"></div>
       <div className="signUp_main_contents">
         <div className="signUpForm_Container">
@@ -71,6 +80,7 @@ const SignUp = () => {
                 placeholder="Name or User Name"
                 type="text"
                 id="SignUpName"
+                required
                 value={fullNames}
                 onChange={(event) => setfullNames(event.target.value)}
               />
@@ -78,6 +88,7 @@ const SignUp = () => {
                 placeholder="Email Address"
                 type="email"
                 id="SignUpemailAddress"
+                required
                 value={email}
                 onChange={(event) => setEmail(event.target.value)}
               />
@@ -85,6 +96,7 @@ const SignUp = () => {
                 placeholder="Type Password"
                 type="password"
                 id="signUpPassword"
+                required
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
               />
@@ -94,6 +106,7 @@ const SignUp = () => {
                 type="password"
                 id="Re-type_Password"
                 value={confirmPassword}
+                required
                 onChange={(event) => setConfirmPassword(event.target.value)}
               />
             </div>

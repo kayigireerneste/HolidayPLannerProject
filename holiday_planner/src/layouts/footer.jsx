@@ -26,9 +26,9 @@ const Footer = () => {
           />
         </div>
         <div className="navigater">
-          <span className="nav_title">
-          <h1>Navigation</h1>
-          </span>
+          <div className="nav_title">
+            <h1>Navigation</h1>
+          </div>
           <nav className="footer_navBar">
             <ul className="nav_list">
               <li>
@@ -53,7 +53,7 @@ const Footer = () => {
           </nav>
         </div>
         <div className="help">
-        <span className="help_title">
+          <span className="help_title">
           <h1>Need Help ?</h1>
           </span>
           <div className="help_contact">

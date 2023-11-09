@@ -285,6 +285,7 @@
 
 /** css for main content of navbar **/
 .model_content{
+    width: 100%;
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -339,4 +340,117 @@
     text-decoration: line-through;
     color: #C29D59;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px){
+    /*Tablets [601px -> 1200px]*/
+
+}
+@media only screen and (max-width: 600px){
+	/*Big smartphones [426px -> 600px]*/
+
+    .navBar_content{
+        width: 100%;
+        height: 10vh;
+        z-index: 1;
+    }
+
+    .sub_nav-bar{
+        display: none;
+    }
+
+    .main_nav-bar{
+        background-color: #FFFFFF;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 0 0 10px #0c0c0c4d;
+        margin: 0px;
+    }
+
+    .logo{
+        width: 50%;
+        height: 50%;
+        margin: 8px;
+    }
+
+    .reserver_btn{
+        display: none;
+    }
+
+    .search_bager{
+        height: 100%;
+        width: 30%;
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+     /* modal navBar*/
+   
+     .modalLogo{
+        width: 250px;
+        height: 80px;
+        position: relative;
+        top: 150px;
+        left: 80px;
+    }
+
+}
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    .navBar_content{
+        width: 100%;
+        height: 10vh;
+        z-index: 1;
+    }
+
+    .sub_nav-bar{
+        display: none;
+    }
+
+    .main_nav-bar{
+        background-color: #FFFFFF;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: 0 0 10px #0c0c0c4d;
+        margin: 0px;
+    }
+
+    .logo{
+        width: 50%;
+        height: 50%;
+        margin: 8px;
+    }
+
+    .reserver_btn{
+        display: none;
+    }
+
+    .search_bager{
+        height: 100%;
+        width: 30%;
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* modal navBar*/
+   
+    .modalLogo{
+        width: 250px;
+        height: 80px;
+        position: relative;
+        top: 150px;
+        left: 80px;
+    }
+
+  
 }
