@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const SignUp = () => {
 
  // signUp logics code
-  const [fullNames, setfullNames] = useState("");
+  const [fullName, setfullNames] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -34,9 +34,9 @@ const SignUp = () => {
 
     try {
       const response = await axios.post(
-        "https://holiday-api-zj3a.onrender.com/api/v1/auth/signup",
+        "https://holiday-planner-4lnj.onrender.com/api/v1/auth/signup",
         {
-          fullNames,
+          fullName,
           email,
           password,
         }
@@ -81,7 +81,7 @@ const SignUp = () => {
                 type="text"
                 id="SignUpName"
                 required
-                value={fullNames}
+                value={fullName}
                 onChange={(event) => setfullNames(event.target.value)}
               />
               <input

@@ -91,29 +91,45 @@
     color: #C29D59;
 }
 
-.profileIMages{
-    height: 45%;
-    width: 100%;
+.header{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 8px #00000033;
 }
 
-.profileIMages input{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    position: relative;
-    border: 2px solid #00000059;
-    top: 50px;
-    right: 50px;
+.menu-icon{
+    width: 10%;
+    height: auto;
+    display: none;
 }
 
-.LogOut{
-    font-size: 20px;
-    color: #C29D59;
-    position: relative;
-    top: 50px;
-    right: 20px;
+.icon{
+    font-size: 16px;
+    margin-left: 20px;
+    color: #000000;
 }
 
+.header-right{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+}
+
+#searchInput{
+    width: 70%;
+    outline: none;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #cecdcd;
+}

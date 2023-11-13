@@ -1,8 +1,6 @@
 import "../DashboardCSS/DashboardNavBar.css";
 import dashLogo from "../images/logo.png";
-import { Link } from "react-router-dom";
-import usersImages from "../images/usersImages.png";
-import { AiFillDashboard, AiOutlineLogout } from "react-icons/ai";
+import { AiFillDashboard, AiFillSetting } from "react-icons/ai";
 import { FaUmbrellaBeach } from "react-icons/fa";
 import { ImAddressBook } from "react-icons/im";
 import { IoIosArrowForward } from "react-icons/io";
@@ -24,7 +22,7 @@ const DashboardNavBar = () => {
                 <AiFillDashboard className="dashNavIcon" />
                 <NavLink
                   className="dashLink"
-                  activeClassName="active"
+                  // activeClassName="active"
                   exact
                   to="/Dashboard"
                 >
@@ -72,14 +70,21 @@ const DashboardNavBar = () => {
               </span>
               <IoIosArrowForward color="#C29D59" />
             </li>
+            <li>
+              <span>
+                <AiFillSetting className="dashNavIcon" />
+                <NavLink
+                  className="dashLink"
+                  activeClassName="active"
+                  to="/Dashboard/Settings"
+                >
+                  Settings
+                </NavLink>
+              </span>
+              <IoIosArrowForward color="#C29D59" />
+            </li>
           </ul>
         </div>
-      </div>
-      <div className="profileIMages">
-        <input type="image" src={usersImages} alt="userImages" />
-        <Link to="/login">
-        <AiOutlineLogout className="LogOut"/>
-        </Link>
       </div>
     </div>
   );

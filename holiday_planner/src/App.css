@@ -28,4 +28,19 @@
 .Dashoutlet{
     width: 80%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.header{
+    height: 10vh;
+    width: 100%;
+    position: relative;
+}
+
+.outlet{
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: scroll;
 }

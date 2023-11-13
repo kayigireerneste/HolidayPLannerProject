@@ -15,6 +15,8 @@ import DashboardNavBar from "./Dashboard/DashboardNavBar";
 import DashboardTours from "./Dashboard/DashboardTours";
 import DashboardBookings from "./Dashboard/DashboardBookings";
 import DashboardUsers from "./Dashboard/DashboardUsers";
+import Settings from "./Dashboard/Settings";
+import Header from "./Dashboard/Header";
 
 function App() {
   const Layout = () => {
@@ -42,7 +44,12 @@ function App() {
         <DashboardNavBar/>
         </div>
         <div className="Dashoutlet">
-        <Outlet />
+          <div className="header">
+            <Header/>
+          </div>
+          <div className="outlet">
+            <Outlet />
+          </div>
         </div>
       </div>
     );
@@ -66,6 +73,7 @@ function App() {
           <Route path="DashboardTours" element={<DashboardTours/>} />
           <Route path="DashboardBookings" element={<DashboardBookings/>} />
           <Route path="DashboardUsers" element={<DashboardUsers/>} />
+          <Route path="Settings" element={<Settings/>} />
         </Route>
       </Routes>
     </BrowserRouter>

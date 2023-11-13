@@ -28,7 +28,7 @@ const Login = () => {
     };
     try {
       const response = await fetch(
-        "https://holiday-api-zj3a.onrender.com/api/v1/auth/login",
+        "https://holiday-planner-4lnj.onrender.com/api/v1/auth/login",
         {
           method: "POST",
           headers: {

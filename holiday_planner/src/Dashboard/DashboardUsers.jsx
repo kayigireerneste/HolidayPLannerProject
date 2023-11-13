@@ -35,10 +35,10 @@ const DashboardUsers = () => {
             
             {dashUsers?.map((user) => (
             <tr key={user?._id}>
-              <td>{user?.fullNames}</td>
+              <td>{user?.fullName}</td>
               <td>{user?.email}</td>
               <td>{user?.location}</td>
-              <td>{user?.phoneNumber}</td>
+              <td>{user?.phone}</td>
               <td>{user?.role}</td>
               <td>
                   <GrFormEdit className="editor" />
